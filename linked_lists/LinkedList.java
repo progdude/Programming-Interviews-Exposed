@@ -81,6 +81,25 @@ public class LinkedList {
 		return false;
 		
 	}
+	
+	public void mthtolast(int x){
+		mthtolast(head,x);
+	}
+	
+	private int mthtolast(Node h, int x){
+		if(h.next==null){
+			if(x==0){
+				System.out.println(h.data);
+			}
+			return 1;
+		}
+		
+		 int y = mthtolast(h.next,x);
+		 if(y==x){
+			 System.out.println(h.data);
+		 }
+		 return y+1;
+	}
 
 	
 }

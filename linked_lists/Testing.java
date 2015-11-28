@@ -30,6 +30,7 @@ public class Testing {
 		li.print();
 		li.remove(200);
 		li.print();
+		li.mthtolast(5);
 		
 		
 	}
